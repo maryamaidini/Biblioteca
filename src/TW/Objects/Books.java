@@ -11,12 +11,14 @@ import TW.Enum.EnumObjects;
  */
 public class Books {
     public String Title;
-    public String Code;
+    public int Code;
     public EnumObjects.BookStatus Status;
-    public  Books(String title, String code, EnumObjects.BookStatus Sts)
+    public  Books(String title, int code, EnumObjects.BookStatus Sts)
     {
          this.Title = title;
         this.Code = code;
         this.Status = Sts;
     }
+
+
 }

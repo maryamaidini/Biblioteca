@@ -11,7 +11,5 @@ public class EnumObjects {
     public enum BookStatus{
         Available,Reserved,OutOfStock
     };
-    public enum Steps{
-        ViewBooks,ReserveBook
-    };
+
 }
