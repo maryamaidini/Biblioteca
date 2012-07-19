@@ -24,16 +24,18 @@ public class BibliotecaLibrary {
         System.out.println("**********************************************************");
         System.out.println("* Welcome to The Bangalore Public Library System - Biblioteca *");
         System.out.println("**********************************************************");
-
-        while (true) {
+          boolean Condition = true;
+        while (Condition) {
             System.out.println("**********************************************************");
             System.out.println("*                Menu                                    *");
             System.out.println("*         =====================                          *");
             System.out.println("*         1. List Book Catalog                           *");
             System.out.println("*         2. Reserve a Book                              *");
-            System.out.println("*         3. Exit                                        *");
+            System.out.println("*         3. Check LibNumber                             *");
+            System.out.println("*         4. Exit                                        *");
             System.out.println("**********************************************************");
             System.out.println("Your Selection: ");
+
 
             InputStreamReader inputStream = new InputStreamReader(System.in);
             BufferedReader reader = new BufferedReader(inputStream);
@@ -46,7 +48,7 @@ public class BibliotecaLibrary {
                 System.out.println("Enter a valid integer!!");
             }
 
-            if(i1 < 1 || i1 > 3)
+            if(i1 < 1 || i1 > 5)
             {
 
                 System.out.println("Enter a valid integer between 1 and 3");
@@ -81,12 +83,22 @@ public class BibliotecaLibrary {
 
             } else if (i1 == 3) {
 
-                    System.out.println("Hope to see you soon. Thank you.");
+                System.out.println(" Please enter your library number: ");
+                int i2 = 0;
+                try {
+                    i2 = Integer.parseInt(reader.readLine());
+                    System.out.println(" Please talk to Librarian. Thank you ");
+                } catch (Exception e) {
+                    // Do you know what numbers are!!!
+                    System.out.println("Enter a valid integer!!");
+
                 }
+                }
+             else  if (i1 == 4) {
+                System.out.println("Hope to see you soon. Thank you.");
+                Condition = false;
 
-
-
-
+            }
 
 
 
