@@ -1,6 +1,6 @@
 package TW.Objects;
 
-import TW.Enum.EnumObjects;
+import TW.Enum.BookStatus;
 
 /**
  * Created with IntelliJ IDEA.
@@ -21,8 +21,8 @@ public class Books {
      */
     public String Title;
     public int Code;
-    public EnumObjects.BookStatus Status;
-    public  Books(String title, int code, EnumObjects.BookStatus Sts)
+    public BookStatus Status;
+    public  Books(String title, int code, BookStatus Sts)
     {
          this.Title = title;
         this.Code = code;

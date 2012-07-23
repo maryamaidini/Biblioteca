@@ -1,6 +1,6 @@
 package TW.Objects;
-     import TW.Enum.EnumObjects;
-
+import TW.Enum.BookStatus;
+import TW.Enum.ReservationStatus;
 import java.util.ArrayList;
 
 /**
@@ -38,47 +38,39 @@ public class Library {
       *
       * What is the meaning of the return codes please?
       */
-     public String UpdateBookStatus(int code,EnumObjects.BookStatus Status)
+     public ReservationStatus UpdateBookStatus(int code,BookStatus Status)
      {
+
          for (int i=0;i<BookList.size();i++)
           {
-
-               if(BookList.get(i).Code == code  )
-               {
-                   if(Status == EnumObjects.BookStatus.Reserved)
-                   {
-                       if( BookList.get(i).Status == EnumObjects.BookStatus.OutOfStock || BookList.get(i).Status == EnumObjects.BookStatus.Reserved)
-                           return "Sorry we don't have that book yet";
-                        else
-                        {
-                              BookList.get(i).Status = Status;
-                              return "";
-                        }
-                   }
-                   else
-                   {
-                       BookList.get(i).Status = Status;
-                       return "";
-                   }
-
-               }
+              if(BookList.get(i).Code == code  )
+              {
+                 return Reserve(i, Status);
+              }
           }
-         return " ";
+         return ReservationStatus.Failed;
      }
 
-    /*
-     * Would this class be a good place for this method?
-     */
-    public Library CreateLibrary(Library Lib)
-    {
+    private ReservationStatus Reserve(int i,BookStatus Status) {
 
-        Books Book1=new Books("Math",1, EnumObjects.BookStatus.Available) ;
-        Books Book2=new Books("History",2, EnumObjects.BookStatus.OutOfStock) ;
-        Books Book3=new Books("Science",3, EnumObjects.BookStatus.Reserved) ;
+            if(Status == BookStatus.Reserved)
+            {
+                if( BookList.get(i).Status == BookStatus.OutOfStock || BookList.get(i).Status == BookStatus.Reserved)
+                    return ReservationStatus.Failed      ;
+                else
+                {
+                    BookList.get(i).Status = Status;
+                    return ReservationStatus.Successful;
+                }
+            }
+            else
+            {
+                BookList.get(i).Status = Status;
+                return ReservationStatus.Successful;
+            }
 
-        Lib.AddBook(Book1);
-        Lib.AddBook(Book2);
-        Lib.AddBook(Book3);
-        return Lib;
+
     }
+
+
 }

@@ -1,10 +1,10 @@
-import TW.Enum.EnumObjects;
+import TW.Enum.BookStatus;
+import TW.Enum.ReservationStatus;
 import TW.Objects.Books;
 import TW.Objects.Library;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotSame;
 
 /**
  * Created with IntelliJ IDEA.
@@ -30,7 +30,7 @@ public void AddBookTest()
 
 
      //Assert
-        Books book=new Books("Testname",1, EnumObjects.BookStatus.Reserved)    ;
+        Books book=new Books("Testname",1, BookStatus.Reserved)    ;
         Lib.AddBook(book);
      //Test
         assertEquals(1, Lib.ShowStock());
@@ -40,51 +40,50 @@ public void AddBookTest()
     {
         //Assign
         Library Lib=new Library();
-        Books book=new Books("Testname",1, EnumObjects.BookStatus.Reserved)    ;
+        Books book=new Books("Testname",1, BookStatus.Reserved)    ;
         Lib.AddBook(book);
 
         //Assert
-        String check= Lib.UpdateBookStatus(1, EnumObjects.BookStatus.OutOfStock);
+        ReservationStatus check= Lib.UpdateBookStatus(1, BookStatus.OutOfStock);
         //Test
-        assertEquals("", check);
+        assertEquals(ReservationStatus.Successful, check);
     }
     @Test
     public void ChangeBookStatusToReserveFromAvailable()
     {
         //Assign
         Library Lib=new Library();
-        Books book=new Books("Testname",1, EnumObjects.BookStatus.Available)    ;
+        Books book=new Books("Testname",1, BookStatus.Available)    ;
         Lib.AddBook(book);
 
         //Assert
-        String check= Lib.UpdateBookStatus(1, EnumObjects.BookStatus.Reserved);
+        ReservationStatus check= Lib.UpdateBookStatus(1, BookStatus.Reserved);
         //Test
-        assertNotSame(true, "");
+        assertEquals(ReservationStatus.Successful, check);
     }
     @Test
      public void ChangeBookStatusToReserveFromReserve()
     {
         //Assign
         Library Lib=new Library();
-        Books book=new Books("Testname",1, EnumObjects.BookStatus.Reserved)    ;
+        Books book=new Books("Testname",1, BookStatus.Reserved)    ;
         Lib.AddBook(book);
 
         //Assert
-        String check= Lib.UpdateBookStatus(1, EnumObjects.BookStatus.Reserved);
-        //Test
-        assertNotSame(check, "");
+        ReservationStatus check= Lib.UpdateBookStatus(1, BookStatus.Reserved);
+        assertEquals(ReservationStatus.Failed, check);
     }
     @Test
     public void ChangeBookStatusToReserveFromOutOfStock()
     {
         //Assign
         Library Lib=new Library();
-        Books book=new Books("Testname",1, EnumObjects.BookStatus.OutOfStock)    ;
+        Books book=new Books("Testname",1, BookStatus.OutOfStock)    ;
         Lib.AddBook(book);
 
         //Assert
-        String check= Lib.UpdateBookStatus(1, EnumObjects.BookStatus.Reserved);
+        ReservationStatus check= Lib.UpdateBookStatus(1, BookStatus.Reserved);
         //Test
-        assertNotSame(check, "");
+        assertEquals(ReservationStatus.Failed, check);
     }
 }
