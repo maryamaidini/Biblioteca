@@ -68,7 +68,7 @@ public class BibliotecaLibrary {
                     System.out.println("Enter a valid integer!!");
 
                 }
-                if(i2>=1 && i2<4)
+                if(i2 >= 1 && i2 < 4)
                 {
                         System.out.println("\n");
                         String result =Lib.UpdateBookStatus(i2,EnumObjects.BookStatus.Reserved) ;
