@@ -18,6 +18,9 @@ import java.io.InputStreamReader;// package com.thoughtworks.biblioteca;
 public class BibliotecaLibrary {
 
 
+    /*
+    * This is a very looooong method. What could be done about it? Maybe it is doing to many things?
+    */
     public static void main(String[] args) {
         Library Lib=new Library();
        Lib= Lib.CreateLibrary(Lib);
