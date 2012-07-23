@@ -9,7 +9,16 @@ import TW.Enum.EnumObjects;
  * Time: 15:55
  * To change this template use File | Settings | File Templates.
  */
+
+/*
+ * I like that you are separating different classes into packages. How did you decide what to put into which package?
+ *
+ */
 public class Books {
+
+    /*
+     * Public state of an object is a dangerous thing. How could you improve encapsulation of this class?
+     */
     public String Title;
     public int Code;
     public EnumObjects.BookStatus Status;

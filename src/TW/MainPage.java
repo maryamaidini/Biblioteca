@@ -12,6 +12,11 @@ import TW.Objects.Books;
 import TW.Objects.Library;
 import TW.OuputFunctions.Welcoming;
 
+/*
+ * Is this code still being used? If not, what should be done about it?
+ *
+ * Actually, does the code compile?
+ */
 public class MainPage {
     public static void main(String[] args)
     {

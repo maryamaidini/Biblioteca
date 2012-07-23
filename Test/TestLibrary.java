@@ -13,6 +13,14 @@ import static org.junit.Assert.assertNotSame;
  * Time: 11:37
  * To change this template use File | Settings | File Templates.
  */
+
+
+/*
+ * Which parts of your system are testing by this class? Which parts are not? What is the ratio of these parts?
+ *
+ * Did you try TDD while developing the library system?
+ *
+ */
 public class TestLibrary {
     @Test
 public void AddBookTest()

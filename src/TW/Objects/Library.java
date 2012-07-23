@@ -31,6 +31,13 @@ public class Library {
          return BookList.size();
 
      }
+
+
+     /*
+      * Very deep nested indeed. How could this be flattened? Why would we want to do that?
+      *
+      * What is the meaning of the return codes please?
+      */
      public String UpdateBookStatus(int code,EnumObjects.BookStatus Status)
      {
          for (int i=0;i<BookList.size();i++)
@@ -58,6 +65,10 @@ public class Library {
           }
          return " ";
      }
+
+    /*
+     * Would this class be a good place for this method?
+     */
     public Library CreateLibrary(Library Lib)
     {
 
