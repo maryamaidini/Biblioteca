@@ -23,7 +23,7 @@ public class TestLibrary  {
         Books book=new Books("Testname",1,  Books.BookStatus.Reserved)    ;
         Lib.AddBook(book);
         //Test
-        assertEquals(1, Lib.ShowStock());
+        assertEquals(1, Lib.ShowBookStock());
     }
     @Test
     public void ChangeBookStatusToNonReserveStatus()

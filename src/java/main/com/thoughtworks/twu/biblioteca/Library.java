@@ -10,13 +10,15 @@ import java.util.ArrayList;
  */
 public class Library {
 
-     ArrayList<com.thoughtworks.twu.biblioteca.Books> BookList=new ArrayList<Books>();
+     ArrayList<Books> BookList=new ArrayList<Books>();
+    ArrayList<Movies> MovieList=new ArrayList<Movies>();
 
+ //Book methods
     public void AddBook(Books Book)
     {
         BookList.add(Book);
     }
-     public int ShowStock()
+     public int ShowBookStock()
      {
          System.out.println("These are the  of the Books");
          System.out.println("Title                Code                    availability");
@@ -70,5 +72,23 @@ public class Library {
 
     }
 
+  //Movie methods
+    public void AddMovie(Movies Movie)
+    {
+        MovieList.add(Movie);
+    }
+    public int ShowMovieStock()
+    {
+        System.out.println("These are the  of the Movies");
+        System.out.println("Title                Director                    Rate");
+
+        for (int i=0;i<MovieList.size();i++)
+        {
+
+            System.out.println(MovieList.get(i).Title + "                  "+MovieList.get(i).Director+ "                    "+MovieList.get(i).Rating);
+        }
+        return MovieList.size();
+
+    }
 
 }

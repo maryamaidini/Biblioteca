@@ -17,33 +17,34 @@ public class BibliotecaLibrary {
     * This is a very looooong method. What could be done about it? Maybe it is doing to many things?
     */
     public static void main(String[] args) {
+       BibliotecaLibrary Bib=new BibliotecaLibrary();
        Library Lib=new Library();
-       Lib= CreateLibrary(Lib);
-       PrintWelcoming();
-       UserIntraction(Lib);
+       Lib= Bib.CreateLibrary(Lib);
+       Bib. PrintWelcoming();
+       Bib.UserIntraction(Lib);
 
 
     }
 
-    private static void UserIntraction(Library Lib) {
+    private  void UserIntraction(Library Lib) {
         boolean Condition = true;
         while (Condition) {
             PrintMenu();
-            InputStreamReader inputStream = new InputStreamReader(System.in);
-            BufferedReader reader = new BufferedReader(inputStream);
-             Integer i1= ReadMenuNumber( reader );
-            Condition= ProccessMenuSelection(i1,Lib, reader);
+
+
+             Integer i1= ReadInteger();
+            Condition= ProccessMenuSelection(i1,Lib);
 
         }
     }
-    public static void PrintWelcoming()
+    public  void PrintWelcoming()
       {
           System.out.println("**********************************************************");
           System.out.println("* Welcome to The Bangalore Public Library System - Biblioteca *");
           System.out.println("**********************************************************");
 
       }
-    public static void PrintMenu()
+    public  void PrintMenu()
     {
         System.out.println("**********************************************************");
         System.out.println("*                Menu                                    *");
@@ -51,12 +52,13 @@ public class BibliotecaLibrary {
         System.out.println("*         1. List Book Catalog                           *");
         System.out.println("*         2. Reserve a Book                              *");
         System.out.println("*         3. Check LibNumber                             *");
-        System.out.println("*         4. Exit                                        *");
+        System.out.println("*         4. View Movie detail                           *");
+        System.out.println("*         5. Exit                                        *");
         System.out.println("**********************************************************");
         System.out.println("Your Selection: ");
      }
 
-    public static boolean ProccessMenuSelection(int SelectedMenu ,Library Lib, BufferedReader reader)
+    public  boolean ProccessMenuSelection(int SelectedMenu ,Library Lib)
     {
         if(SelectedMenu < 1 || SelectedMenu > 5)
         {
@@ -64,26 +66,24 @@ public class BibliotecaLibrary {
         }
         else if (SelectedMenu == 1) {
 
-            Lib.ShowStock();
+            Lib.ShowBookStock();
 
         }
         else if (SelectedMenu == 2) {
-           BookReservationProcess(Lib,reader);
+           BookReservationProcess(Lib);
 
         } else if (SelectedMenu == 3) {
 
             System.out.println(" Please enter your library number: ");
-            int i2 = 0;
-            try {
-                i2 = Integer.parseInt(reader.readLine());
-                System.out.println(" Please talk to Librarian. Thank you ");
-            } catch (Exception e) {
-                // Do you know what numbers are!!!
-                System.out.println("Enter a valid integer!!");
+            ReadInteger();
+            System.out.println(" Please talk to Librarian. Thank you ");
 
-            }
         }
-        else  if (SelectedMenu == 4) {
+        else if (SelectedMenu == 4) {
+
+            Lib.ShowMovieStock();
+        }
+        else  if (SelectedMenu == 5) {
             System.out.println("Hope to see you soon. Thank you.");
             return false;
 
@@ -92,11 +92,11 @@ public class BibliotecaLibrary {
 
 }
 
-    private static void BookReservationProcess(Library Lib,BufferedReader reader) {
+    private  void BookReservationProcess(Library Lib) {
         System.out.println(" Please enter the code of the book you wish to reserve: ");
         int BookId = 0;
         try {
-            BookId = Integer.parseInt(reader.readLine());
+            BookId = ReadInteger();
         } catch (Exception e) {
             // Do you know what numbers are!!!
             System.out.println("Enter a valid integer!!");
@@ -116,9 +116,10 @@ public class BibliotecaLibrary {
             System.out.println("Enter a valid Code!!");
     }
 
-    public static int ReadMenuNumber(BufferedReader reader)
+    public  int ReadInteger()
     {
-
+        InputStreamReader inputStream = new InputStreamReader(System.in);
+        BufferedReader reader = new BufferedReader(inputStream);
         int i1 = 0;
         try {
             String value = reader.readLine();
@@ -132,9 +133,9 @@ public class BibliotecaLibrary {
         return 0;
     }
 
-    public static Library CreateLibrary(Library Lib)
+    public  Library CreateLibrary(Library Lib)
     {
-
+        //Add book
         Books Book1=new Books("Math",1,  Books.BookStatus.Available) ;
         Books Book2=new Books("History",2,  Books.BookStatus.OutOfStock) ;
         Books Book3=new Books("Science",3,  Books.BookStatus.Reserved) ;
@@ -142,6 +143,15 @@ public class BibliotecaLibrary {
         Lib.AddBook(Book1);
         Lib.AddBook(Book2);
         Lib.AddBook(Book3);
+
+        //Add Movie
+        Movies Movie1=new Movies("Titanic","name1",  1) ;
+        Movies Movie2=new Movies("King Speech","name2",  2) ;
+        Movies Movie3=new Movies("Science","name3",  3) ;
+
+        Lib.AddMovie(Movie1);
+        Lib.AddMovie(Movie2);
+        Lib.AddMovie(Movie3);
         return Lib;
     }
 }
