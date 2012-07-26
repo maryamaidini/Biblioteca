@@ -12,7 +12,7 @@ public class Library {
 
      ArrayList<Books> BookList=new ArrayList<Books>();
     ArrayList<Movies> MovieList=new ArrayList<Movies>();
-
+    ArrayList<User> UserList=new ArrayList<User>();
  //Book methods
     public void AddBook(Books Book)
     {
@@ -90,5 +90,8 @@ public class Library {
         return MovieList.size();
 
     }
-
+    public void AddUser(User Usr)
+    {
+        UserList.add(Usr);
+    }
 }

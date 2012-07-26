@@ -1,4 +1,4 @@
-package java.main;
+package com.thoughtworks.twu.biblioteca;
 
 /**
  * Created with IntelliJ IDEA.
@@ -8,4 +8,18 @@ package java.main;
  * To change this template use File | Settings | File Templates.
  */
 public class User {
+
+    public String FirtsName;
+    public String Surename;
+    public String LibrryNumber;
+    public String PassWord;
+    public User(String firtsName, String surename, String LibNumber,String pass)
+    {
+        this.FirtsName = firtsName;
+        this.Surename = surename;
+        this.LibrryNumber=LibNumber;
+        this.PassWord = pass;
+    }
+
+
 }

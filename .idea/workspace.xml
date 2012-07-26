@@ -12,10 +12,10 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Biblioteca$TestBibliotecaLibrary.coverage" NAME="TestBibliotecaLibrary Coverage Results" MODIFIED="1343143430144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Biblioteca$java_Test_in_Biblioteca.coverage" NAME="java.Test in Biblioteca Coverage Results" MODIFIED="1343124833932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>java.Test.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Biblioteca$java_Test_in_Biblioteca.coverage" NAME="java.Test in Biblioteca Coverage Results" MODIFIED="1343124833932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Biblioteca$TestBibliotecaLibrary.coverage" NAME="TestBibliotecaLibrary Coverage Results" MODIFIED="1343143430144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>java.Test.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Biblioteca$TestBibliotecaLibrary_ReadIntegerTest.coverage" NAME="TestBibliotecaLibrary.ReadIntegerTest Coverage Results" MODIFIED="1343231399375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -68,12 +68,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="TestBibliotecaLibrary.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/Test/TestBibliotecaLibrary.java">
+        <entry file="file://$PROJECT_DIR$/src/java/Test/com/thoughtworks/twu/test/TestBibliotecaLibrary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="49" selection-start="1643" selection-end="1643" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="90" column="38" selection-start="2124" selection-end="2124" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,11 +79,38 @@
       <file leaf-file-name="BibliotecaLibrary.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/main/com/thoughtworks/twu/biblioteca/BibliotecaLibrary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="40" selection-start="3009" selection-end="3031" vertical-scroll-proportion="-0.03448276">
+            <state line="204" column="0" selection-start="293" selection-end="6562" vertical-scroll-proportion="0.8478702">
               <folding>
                 <element signature="method#PrintWelcoming#0;class#BibliotecaLibrary#0" expanded="false" />
-                <element signature="method#PrintMenu#0;class#BibliotecaLibrary#0" expanded="false" />
-                <element signature="method#ProccessMenuSelection#0;class#BibliotecaLibrary#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/main/com/thoughtworks/twu/biblioteca/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="51" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Books.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/main/com/thoughtworks/twu/biblioteca/Books.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="35" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Library.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/main/com/thoughtworks/twu/biblioteca/Library.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="89" column="26" selection-start="2697" selection-end="2697" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#404#410#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,8 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Test/TestLibrary.java" />
-        <option value="$PROJECT_DIR$/src/java/main/Objects/Books.java" />
         <option value="$PROJECT_DIR$/src/java/Test/TestLibraryTest.java" />
         <option value="$PROJECT_DIR$/src/java/main/Objects/Library.java" />
         <option value="$PROJECT_DIR$/Test/TestBibliotecaLibrary.java" />
@@ -111,12 +134,14 @@
         <option value="$PROJECT_DIR$/src/java/main/BibliotecaLibrary.java" />
         <option value="$PROJECT_DIR$/src/java/Test/LibraryTest.java" />
         <option value="$PROJECT_DIR$/src/java/main/com/thoughtworks/twu/biblioteca/Books.java" />
-        <option value="$PROJECT_DIR$/src/java/main/com/thoughtworks/twu/biblioteca/Library.java" />
         <option value="$PROJECT_DIR$/src/java/main/com/thoughtworks/twu/biblioteca/Movies.java" />
         <option value="$PROJECT_DIR$/src/java/Test/TestLibrary.java" />
-        <option value="$PROJECT_DIR$/src/java/main/com/thoughtworks/twu/biblioteca/BibliotecaLibrary.java" />
         <option value="$PROJECT_DIR$/src/java/Test/MovieTest.java" />
         <option value="$PROJECT_DIR$/src/java/Test/TestBibliotecaLibrary.java" />
+        <option value="$PROJECT_DIR$/src/java/main/com/thoughtworks/twu/biblioteca/User.java" />
+        <option value="$PROJECT_DIR$/src/java/main/com/thoughtworks/twu/biblioteca/Library.java" />
+        <option value="$PROJECT_DIR$/src/java/Test/com/thoughtworks/twu/test/TestBibliotecaLibrary.java" />
+        <option value="$PROJECT_DIR$/src/java/main/com/thoughtworks/twu/biblioteca/BibliotecaLibrary.java" />
       </list>
     </option>
   </component>
@@ -154,29 +179,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Biblioteca" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Biblioteca" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane subId="Project Files" />
       </pane>
       <pane id="ProjectPane">
         <subPane>
@@ -235,6 +239,10 @@
               <option name="myItemId" value="Test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -282,6 +290,20 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Biblioteca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Biblioteca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -319,65 +341,14 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestBibliotecaLibrary">
-    <configuration default="false" name="BibliotecaLibraryTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="java.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Biblioteca" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="java.main" />
-      <option name="MAIN_CLASS_NAME" value="java.main.BibliotecaLibraryTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestBibliotecaLibrary.AddBookTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Biblioteca" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestBibliotecaLibrary" />
-      <option name="METHOD_NAME" value="AddBookTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.BibliotecaLibrary">
     <configuration default="false" name="TestBibliotecaLibrary" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Biblioteca" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestBibliotecaLibrary" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.twu.test" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.twu.test.TestBibliotecaLibrary" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -399,8 +370,8 @@
       <module name="Biblioteca" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestBibliotecaLibrary" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.twu.test" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.twu.test.TestBibliotecaLibrary" />
       <option name="METHOD_NAME" value="ProccessMenuTest_CheckLibraryNumber" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -422,8 +393,8 @@
       <module name="Biblioteca" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestBibliotecaLibrary" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.twu.test" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.twu.test.TestBibliotecaLibrary" />
       <option name="METHOD_NAME" value="ReadIntegerTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -439,6 +410,56 @@
       <RunnerSettings RunnerId="Cover" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Cover" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BibliotecaLibrary" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtworks.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.twu.biblioteca.BibliotecaLibrary" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Biblioteca" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestBibliotecaLibrary.CheckUserCredentialTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtworks.twu.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Biblioteca" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.twu.test" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.twu.test.TestBibliotecaLibrary" />
+      <option name="METHOD_NAME" value="CheckUserCredentialTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -462,6 +483,24 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -491,24 +530,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -611,8 +632,8 @@
       <module name="Biblioteca" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="java.Test" />
-      <option name="MAIN_CLASS_NAME" value="TestLibrary" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.twu.test" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.twu.test.TestLibrary" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -639,11 +660,11 @@
       <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.TestLibrary.AddBookTest" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.TestLibrary" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BibliotecaLibraryTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestBibliotecaLibrary.AddBookTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TestBibliotecaLibrary" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.TestBibliotecaLibrary.ProccessMenuTest_CheckLibraryNumber" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.TestBibliotecaLibrary.ReadIntegerTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestBibliotecaLibrary" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestBibliotecaLibrary.ProccessMenuTest_CheckLibraryNumber" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TestBibliotecaLibrary.ReadIntegerTest" />
+      <item index="6" class="java.lang.String" itemvalue="Application.BibliotecaLibrary" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.TestBibliotecaLibrary.CheckUserCredentialTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -679,7 +700,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="57" width="1585" height="895" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -698,7 +719,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24918672" sideWeight="0.67183465" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32816538" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32816538" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -766,69 +787,56 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/java/main/com/thoughtworks/twu/biblioteca/User.java">
+    <entry file="file://$PROJECT_DIR$/src/java/Test/com/thoughtworks/twu/test/MovieTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="19" selection-start="195" selection-end="196" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/main/com/thoughtworks/twu/biblioteca/Library.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="27" selection-start="2254" selection-end="2254" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#294#301#0" expanded="true" />
-            <element signature="e#350#358#0" expanded="true" />
-            <element signature="method#UpdateBookStatus#0;class#Library#0" expanded="false" />
-            <element signature="method#Reserve#0;class#Library#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/Test/MovieTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="63" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="15" column="63" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/main/com/thoughtworks/twu/biblioteca/Movies.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="47" selection-start="298" selection-end="298" vertical-scroll-proportion="0.09127789">
-          <folding />
-        </state>
+        <state line="15" column="47" selection-start="298" selection-end="298" vertical-scroll-proportion="0.09127789" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/Test/com/thoughtworks/twu/test/TestLibrary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="26" selection-start="357" selection-end="2309" vertical-scroll-proportion="0.87829614" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/main/com/thoughtworks/twu/biblioteca/Books.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="28" selection-start="0" selection-end="1012" vertical-scroll-proportion="0.030425964">
+        <state line="17" column="35" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/Test/TestLibrary.java">
+    <entry file="file://$PROJECT_DIR$/src/java/main/com/thoughtworks/twu/biblioteca/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="26" selection-start="357" selection-end="2309" vertical-scroll-proportion="0.87829614">
+        <state line="9" column="51" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/Test/TestBibliotecaLibrary.java">
+    <entry file="file://$PROJECT_DIR$/src/java/main/com/thoughtworks/twu/biblioteca/Library.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="49" selection-start="1643" selection-end="1643" vertical-scroll-proportion="0.0">
+        <state line="89" column="26" selection-start="2697" selection-end="2697" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#404#410#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/Test/com/thoughtworks/twu/test/TestBibliotecaLibrary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="38" selection-start="2124" selection-end="2124" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/main/com/thoughtworks/twu/biblioteca/BibliotecaLibrary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="40" selection-start="3009" selection-end="3031" vertical-scroll-proportion="-0.03448276">
+        <state line="204" column="0" selection-start="293" selection-end="6562" vertical-scroll-proportion="0.8478702">
           <folding>
             <element signature="method#PrintWelcoming#0;class#BibliotecaLibrary#0" expanded="false" />
-            <element signature="method#PrintMenu#0;class#BibliotecaLibrary#0" expanded="false" />
-            <element signature="method#ProccessMenuSelection#0;class#BibliotecaLibrary#0" expanded="false" />
           </folding>
         </state>
       </provider>

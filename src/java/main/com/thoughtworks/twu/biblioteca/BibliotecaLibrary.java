@@ -74,9 +74,12 @@ public class BibliotecaLibrary {
 
         } else if (SelectedMenu == 3) {
 
-            System.out.println(" Please enter your library number: ");
-            ReadInteger();
-            System.out.println(" Please talk to Librarian. Thank you ");
+            boolean  Check =  Login(Lib) ;
+            if(Check==true)
+                System.out.println(" Your Library info is correct ");
+            else
+
+            System.out.println(" Your Library info does not exist in the system. Please talk to Librarian. Thank you ");
 
         }
         else if (SelectedMenu == 4) {
@@ -133,6 +136,22 @@ public class BibliotecaLibrary {
         return 0;
     }
 
+
+    public  String ReadString()
+    {
+        InputStreamReader inputStream = new InputStreamReader(System.in);
+        BufferedReader reader = new BufferedReader(inputStream);
+
+        try {
+            return reader.readLine().toString();
+
+        }
+        catch (Exception e) {
+            // Do you know what numbers are!!!
+            System.out.println("Enter a valid integer!");
+        }
+        return "";
+    }
     public  Library CreateLibrary(Library Lib)
     {
         //Add book
@@ -152,6 +171,35 @@ public class BibliotecaLibrary {
         Lib.AddMovie(Movie1);
         Lib.AddMovie(Movie2);
         Lib.AddMovie(Movie3);
+        //Add User
+        User User1=new User("Librarian","",  "111-1111","123") ;
+        User User2=new User("Maryam ","Aidini",  "111-1112","1234") ;
+        User User3=new User("Sara","Berry",  "111-1113","12345") ;
+
+
+        Lib.AddUser(User1);
+        Lib.AddUser(User2);
+        Lib.AddUser(User3);
         return Lib;
+    }
+
+    public boolean Login(Library Lib )
+    {
+        System.out.println(Lib.UserList.size());
+        System.out.println(" Please enter you UserName: ");
+        String Usern = ReadString();
+        System.out.println(" Please enter you Password: ");
+        String Pass = ReadString();
+
+       return CheckUserCredential(Usern, Pass,Lib);
+    }
+
+    public boolean CheckUserCredential( String Username, String pass,Library Lib) {
+         for (int i=0;i<Lib.UserList.size();i++)
+         {
+                if((Username.equals(Lib.UserList.get(i).LibrryNumber) ) && (pass.equals(Lib.UserList.get(i).PassWord))  )
+                     return true;
+         }
+        return false;
     }
 }
