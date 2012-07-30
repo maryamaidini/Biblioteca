@@ -8,15 +8,15 @@
 package com.thoughtworks.twu.biblioteca;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
-
 public class BibliotecaLibrary {
 
 
     /*
     * This is a very looooong method. What could be done about it? Maybe it is doing to many things?
     */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
        BibliotecaLibrary Bib=new BibliotecaLibrary();
        Library Lib=new Library();
        Lib= Bib.CreateLibrary(Lib);
@@ -27,12 +27,14 @@ public class BibliotecaLibrary {
     }
 
     private  void UserIntraction(Library Lib) {
+        InputStreamReader inputStream = new InputStreamReader(System.in);
+        BufferedReader reader = new BufferedReader(inputStream);
         boolean Condition = true;
         while (Condition) {
             PrintMenu();
 
 
-             Integer i1= ReadInteger();
+             Integer i1= ReadInteger(reader);
             Condition= ProccessMenuSelection(i1,Lib);
 
         }
@@ -76,11 +78,14 @@ public class BibliotecaLibrary {
 
             boolean  Check =  Login(Lib) ;
             if(Check==true)
+            {
                 System.out.println(" Your Library info is correct ");
+            }
             else
-
+            {
             System.out.println(" Your Library info does not exist in the system. Please talk to Librarian. Thank you ");
-
+                return false;
+            }
         }
         else if (SelectedMenu == 4) {
 
@@ -95,11 +100,13 @@ public class BibliotecaLibrary {
 
 }
 
-    private  void BookReservationProcess(Library Lib) {
+    public  boolean BookReservationProcess(Library Lib) {
         System.out.println(" Please enter the code of the book you wish to reserve: ");
+        InputStreamReader inputStream = new InputStreamReader(System.in);
+        BufferedReader reader = new BufferedReader(inputStream);
         int BookId = 0;
         try {
-            BookId = ReadInteger();
+            BookId = ReadInteger(reader);
         } catch (Exception e) {
             // Do you know what numbers are!!!
             System.out.println("Enter a valid integer!!");
@@ -110,19 +117,26 @@ public class BibliotecaLibrary {
             System.out.println("\n");
             Books.ReservationStatus result =Lib.UpdateBookStatus(BookId, Books.BookStatus.Reserved) ;
             if(result ==  Books.ReservationStatus.Successful)
+            {
                 System.out.println(" Thank You! Enjoy the book");
+                return true;
+            }
             else
+            {
                 System.out.println(" The book is not available");
+                return false;
+            }
 
         }
         else
             System.out.println("Enter a valid Code!!");
+        return false;
     }
 
-    public  int ReadInteger()
+
+    public static int ReadInteger(BufferedReader reader)
     {
-        InputStreamReader inputStream = new InputStreamReader(System.in);
-        BufferedReader reader = new BufferedReader(inputStream);
+
         int i1 = 0;
         try {
             String value = reader.readLine();
@@ -137,18 +151,17 @@ public class BibliotecaLibrary {
     }
 
 
-    public  String ReadString()
+    public  String ReadString(BufferedReader reader  )
     {
-        InputStreamReader inputStream = new InputStreamReader(System.in);
-        BufferedReader reader = new BufferedReader(inputStream);
+
 
         try {
-            return reader.readLine().toString();
+            return reader.readLine();
 
         }
         catch (Exception e) {
             // Do you know what numbers are!!!
-            System.out.println("Enter a valid integer!");
+            System.out.println(e.getMessage());
         }
         return "";
     }
@@ -185,20 +198,27 @@ public class BibliotecaLibrary {
 
     public boolean Login(Library Lib )
     {
+        InputStreamReader inputStream = new InputStreamReader(System.in);
+        BufferedReader reader = new BufferedReader(inputStream);
+
         System.out.println(Lib.UserList.size());
         System.out.println(" Please enter you UserName: ");
-        String Usern = ReadString();
+        String Usern = ReadString(reader);
         System.out.println(" Please enter you Password: ");
-        String Pass = ReadString();
+        String Pass = ReadString(reader);
 
        return CheckUserCredential(Usern, Pass,Lib);
     }
 
     public boolean CheckUserCredential( String Username, String pass,Library Lib) {
+
          for (int i=0;i<Lib.UserList.size();i++)
          {
-                if((Username.equals(Lib.UserList.get(i).LibrryNumber) ) && (pass.equals(Lib.UserList.get(i).PassWord))  )
-                     return true;
+
+             if(Username.equals(Lib.UserList.get(i).getLibraryNumber()) && pass.equals(Lib.UserList.get(i).getPassword() ) )
+
+                 return true;
+
          }
         return false;
     }

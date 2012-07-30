@@ -9,10 +9,10 @@ package com.thoughtworks.twu.biblioteca;
  */
 public class User {
 
-    public String FirtsName;
-    public String Surename;
-    public String LibrryNumber;
-    public String PassWord;
+    private String FirtsName;
+    private String Surename;
+    private String LibrryNumber;
+    private String PassWord;
     public User(String firtsName, String surename, String LibNumber,String pass)
     {
         this.FirtsName = firtsName;
@@ -20,6 +20,27 @@ public class User {
         this.LibrryNumber=LibNumber;
         this.PassWord = pass;
     }
+    public String getFirstName() {
+
+        return this.FirtsName;
+
+    }
 
 
+
+    public String getSureName() {
+
+        return this.Surename;
+
+    }
+    public String getLibraryNumber() {
+
+        return this.LibrryNumber;
+
+    }
+    public String getPassword() {
+
+        return this.PassWord;
+
+    }
 }

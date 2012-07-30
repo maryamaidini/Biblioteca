@@ -15,9 +15,9 @@ package com.thoughtworks.twu.biblioteca;
 
 
 public class Books {
-    public String Title;
-    public int Code;
-    public BookStatus Status;
+    private String Title;
+    private int Code;
+    private BookStatus Status;
     public Books(String title, int code, BookStatus Sts)
     {
         this.Title = title;
@@ -25,7 +25,7 @@ public class Books {
         this.Status=Sts;
     }
 
-    private String getTitle() {
+    public String getTitle() {
 
         return this.Title;
 
@@ -33,7 +33,7 @@ public class Books {
 
 
 
-    private int getCode() {
+    public int getCode() {
 
         return this.Code;
 
@@ -41,13 +41,13 @@ public class Books {
 
 
 
-    private BookStatus getStatus() {
+    public BookStatus getStatus() {
 
         return this.Status;
 
     }
 
-    private void setstatus(BookStatus Sts) {
+    public void setstatus(BookStatus Sts) {
 
         this.Status = Sts;
 

@@ -26,7 +26,7 @@ public class Library {
          for (int i=0;i<BookList.size();i++)
          {
 
-             System.out.println(BookList.get(i).Title + "                  "+BookList.get(i).Code+ "                    "+BookList.get(i).Status);
+             System.out.println(BookList.get(i).getTitle() + "                  "+BookList.get(i).getCode()+ "                    "+BookList.get(i).getStatus());
          }
          return BookList.size();
 
@@ -43,7 +43,7 @@ public class Library {
 
          for (int i=0;i<BookList.size();i++)
           {
-              if(BookList.get(i).Code == code  )
+              if(BookList.get(i).getCode() == code  )
               {
                  return Reserve(i, Status);
               }
@@ -55,17 +55,17 @@ public class Library {
 
             if(Status ==  Books.BookStatus.Reserved)
             {
-                if( BookList.get(i).Status ==  Books.BookStatus.OutOfStock || BookList.get(i).Status ==  Books.BookStatus.Reserved)
+                if( BookList.get(i).getStatus() ==  Books.BookStatus.OutOfStock || BookList.get(i).getStatus() ==  Books.BookStatus.Reserved)
                     return  Books.ReservationStatus.Failed      ;
                 else
                 {
-                    BookList.get(i).Status = Status;
+                    BookList.get(i).setstatus(Status);
                     return  Books.ReservationStatus.Successful;
                 }
             }
             else
             {
-                BookList.get(i).Status = Status;
+                BookList.get(i).setstatus(Status);
                 return  Books.ReservationStatus.Successful;
             }
 
